@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Projeto Bia e JP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+      }
+
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f4f9f9;
+          color: #333;
+      }
+
+      /* Header */
+      h1 {
+          text-align: center;
+          color: #00796b;
+          margin: 20px 0;
+          font-size: 2.5em;
+      }
+
+      /* Top Navigation Bar */
+      .topnav {
+          background: linear-gradient(90deg, #5dd39e, #45a79b);
+          overflow: hidden;
+          text-align: center;
+          padding: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .topnav a {
+          color: white;
+          text-align: center;
+          padding: 14px 30px;
+          text-decoration: none;
+          font-size: 18px;
+          transition: background-color 0.3s ease;
+      }
+
+      .topnav a:hover {
+          background-color: #00796b;
+          border-radius: 5px;
+      }
+
+      /* Form */
+      form {
+          margin: 40px auto;
+          width: 50%;
+          background-color: #e0f7fa;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      form label {
+          font-size: 1.2em;
+          color: #00796b;
+          margin-bottom: 10px;
+          display: block;
+      }
+
+      form input[type="email"] {
+          width: 100%;
+          padding: 6px; /* Altura reduzida */
+          margin: 10px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1em;
+          transition: border 0.3s ease;
+      }
+
+      form input[type="email"]:focus {
+          border-color: #5dd39e;
+      }
+
+      form input[type="submit"] {
+          background-color: #45a79b;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 1.2em;
+          cursor: pointer;
+          border-radius: 5px;
+          width: 100%;
+          transition: background-color 0.3s ease;
+      }
+
+      form input[type="submit"]:hover {
+          background-color: #00796b;
+      }
+
+      /* Table */
+      table {
+          margin: 30px auto;
+          border-collapse: collapse;
+          width: 90%;
+          background-color: white;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          overflow: hidden;
+      }
+
+      table th, table td {
+          padding: 15px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+      }
+
+      table th {
+          background-color: #45a79b;
+          color: white;
+          font-size: 1.2em;
+      }
+
+      table td {
+          color: #333;
+      }
+
+      table tr:hover {
+          background-color: #f1f1f1;
+      }
+
+      table tr:nth-child(even) {
+          background-color: #f9f9f9;
+      }
+
+      /* Responsive */
+      @media screen and (max-width: 768px) {
+          form {
+              width: 90%;
+          }
+
+          .topnav a {
+              padding: 10px;
+          }
+      }     
+      /* Create three unequal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 10px;
+      }
+      
+      /* Left and right column */
+      .column.side {
+        width: 15%;
+      }
+      
+      /* Middle column */
+      .column.middle {
+        width: 70%;
+      }
+      
+      /* Clear floats after the columns */
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      </style>
+
+</head>
+<body>
+    <div class="header">
+      <h1>Python</h1>
+      <center><p>Neste site aprenderemos de forma prática sobre como programar em Python.</p><br></center>
+    </div>
+      
+      <div class="topnav">
+        <a href="tela inicial.html">tela inicial</a>
+        <a href="modulo1gl.html">módulo 1</a>
+        <a href="modulo2gl.html">módulo 2</a>
+        <a href="modulo3gl.html">módulo 3</a>
+        <a href="aplicativogl.html">aplicativo</a> 
+    </div> 
+    <div class="row">
+        <div class="column side">
+        </div>
+        
+        <div class="column middle">
+            <h2><center>Aplicativo</center><br></h2>
+            <h3><center>Exemplo de Aplicativo Utilizando Golang</center></h3>
+            <p>Aqui temos um exemplo de um aplicativo feito utilizando a linguagem GOlang onde ele da a opção de criptografar um arquivo que você crie na hora ou um arquivo ja existente, além de dar a opção de também descriptografar um arquivo já existente. 
+               <br>O aplicativo também permite que o usuário escolha entre 4 tipos de criptografia diferentes e suas respectivas descriptografias.</p>
+            <p>link para dowload do executável: <a href="AppGO.exe">AppGO.exe</a>
+               <br>link para dowload do código em GO: <a href="AppGo.go">AppGo.go</a> 
+               <br><br><br>O aplicativo funciona por meio da manipulação dos arquivos, criando e lendo arquivos, onde o programa ao criar ou ler algum ".txt" de nome definido pelo usuario, pega o conteudo presente nesse mesmo e aplica seus códigos de criptografia ou de descriptografia, "substituindo" o conteudo presente no arquivo atual pela parte criptografada ou desriptografada do arquivo desejado.
+        </div>
