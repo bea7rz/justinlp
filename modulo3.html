@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Projeto Bia e JP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+      }
+
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f4f9f9;
+          color: #333;
+      }
+
+      /* Header */
+      h1 {
+          text-align: center;
+          color: #00796b;
+          margin: 20px 0;
+          font-size: 2.5em;
+      }
+
+      /* Top Navigation Bar */
+      .topnav {
+          background: linear-gradient(90deg, #5dd39e, #45a79b);
+          overflow: hidden;
+          text-align: center;
+          padding: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .topnav a {
+          color: white;
+          text-align: center;
+          padding: 14px 30px;
+          text-decoration: none;
+          font-size: 18px;
+          transition: background-color 0.3s ease;
+      }
+
+      .topnav a:hover {
+          background-color: #00796b;
+          border-radius: 5px;
+      }
+
+      /* Form */
+      form {
+          margin: 40px auto;
+          width: 50%;
+          background-color: #e0f7fa;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      form label {
+          font-size: 1.2em;
+          color: #00796b;
+          margin-bottom: 10px;
+          display: block;
+      }
+
+      form input[type="email"] {
+          width: 100%;
+          padding: 6px; /* Altura reduzida */
+          margin: 10px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1em;
+          transition: border 0.3s ease;
+      }
+
+      form input[type="email"]:focus {
+          border-color: #5dd39e;
+      }
+
+      form input[type="submit"] {
+          background-color: #45a79b;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 1.2em;
+          cursor: pointer;
+          border-radius: 5px;
+          width: 100%;
+          transition: background-color 0.3s ease;
+      }
+
+      form input[type="submit"]:hover {
+          background-color: #00796b;
+      }
+
+      /* Table */
+      table {
+          margin: 30px auto;
+          border-collapse: collapse;
+          width: 90%;
+          background-color: white;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          overflow: hidden;
+      }
+
+      table th, table td {
+          padding: 15px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+      }
+
+      table th {
+          background-color: #45a79b;
+          color: white;
+          font-size: 1.2em;
+      }
+
+      table td {
+          color: #333;
+      }
+
+      table tr:hover {
+          background-color: #f1f1f1;
+      }
+
+      table tr:nth-child(even) {
+          background-color: #f9f9f9;
+      }
+
+      /* Responsive */
+      @media screen and (max-width: 768px) {
+          form {
+              width: 90%;
+          }
+
+          .topnav a {
+              padding: 10px;
+          }
+      }     
+      /* Create three unequal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 10px;
+      }
+      
+      /* Left and right column */
+      .column.side {
+        width: 15%;
+      }
+      
+      /* Middle column */
+      .column.middle {
+        width: 70%;
+      }
+      
+      /* Clear floats after the columns */
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      </style>
+</head>
+<body>
+  
+    <div class="header">
+      <h1>Python</h1>
+       <center><p>Neste site aprenderemos de forma prática sobre como programar em Python.</p><br></center>
+      </div>
+      
+      <div class="topnav">
+        <a href="tela inicial.html">tela inicial</a>
+        <a href="modulo1.html">módulo 1</a>
+        <a href="modulo2.html">módulo 2</a>
+        <a href="modulo3.html">módulo 3</a>
+        <a href="aplicativo.html">aplicativo</a> 
+    </div> 
+    <div class="row">
+        <div class="column side">
+        </div>
+        
+        <div class="column middle">
+            <h2><center>BUSCA E ORDENAÇÃO</center></h2>
+            <h3><center>BUSCA</center></h3>
+            <p>O algoritmo de busca é amplamente utilizado em Python e em muitas outras linguagens de programação para localizar elementos em uma coleção de dados. Sua importância reside na eficiência que ele proporciona ao resolver problemas de pesquisa em grandes volumes de informação. </p>
+            <p>Dependendo da organização dos dados e da necessidade de otimização, diferentes tipos de algoritmos de busca podem ser utilizados, como a busca linear e a busca binária.</p>
+            
+            <h4><center>Busca Linear</center></h4>
+            <p>A busca linear é um método simples de pesquisa, em que percorremos todos os elementos de uma lista ou array um a um até encontrar o elemento desejado ou atingir o fim da coleção. É útil em casos onde os dados não estão ordenados.</p>
+            <p>No pior cenário, a busca linear tem um tempo de execução de O(n), onde n é o número de elementos na coleção, o que significa que o tempo de execução cresce linearmente com o tamanho da lista.</p>
+            <p>Se estamos procurando um número específico em uma lista desordenada de inteiros, a busca linear irá checar cada número, um após o outro, até encontrar o número desejado ou até passar por todos os números.</p>
+            <center><img src="buscalinear.jpg" width="450" height="250"></center>
+            
+            <h4><center>Busca Binária</center></h4>
+            <p>A busca binária é um algoritmo mais eficiente, mas só pode ser aplicado em coleções de dados que já estejam ordenadas.</p>
+            <p>Ela funciona dividindo a lista pela metade repetidamente até encontrar o elemento desejado ou concluir que ele não está presente. No pior cenário, a busca binária tem um tempo de execução de O(log n), que é muito mais rápido do que a busca linear para grandes coleções de dados.</p>
+            <p>Por exemplo, Se estamos procurando um número em uma lista ordenada, a busca binária começa verificando o elemento no meio da lista. Se o número procurado for menor, a pesquisa continua na metade esquerda, caso contrário, na metade direita. Esse processo se repete até o número ser encontrado ou até não restarem mais elementos.</p>
+            <center><img src="buscabin1.jpg" width="450" height="250"></center>
+            <center><img src="buscabin2.jpg" width="450" height="250"></center>
+           
+            <p>Portanto, a escolha entre busca linear e busca binária depende do contexto: a linear é útil para listas desordenadas, enquanto a binária é ideal para listas ordenadas e oferece maior eficiência em termos de tempo de execução.</p>
+            
+            <h3><center>ORDENAÇÃO</center></h3>
+            <p>O algoritmo de ordenação é uma classe de algoritmos utilizada para reorganizar os elementos de uma lista ou array em uma ordem específica, geralmente crescente ou decrescente. </p>
+            <p> A ordenação é uma operação fundamental em programação, pois facilita a busca e outras operações em conjuntos de dados. Existem diversos tipos de algoritmos de ordenação, e cada um tem características e eficiências diferentes. A baixo iremos ver os três dos algoritmos mais comuns, que são ordenação por bolha, ordenação por seleção e ordenação por inserção.</p>
+
+            <h4><center>Ordenação por Bolha</center></h4>
+            <p>A ordenação por bolha é um algoritmo simples que funciona comparando elementos adjacentes e trocando-os se estiverem na ordem incorreta. Esse processo é repetido várias vezes até que todos os elementos estejam na ordem correta. O nome "bolha" vem da ideia de que os maiores elementos "sobem" para o topo da lista, como bolhas em um líquido.</p>
+            <p>ele funciona da seguinte forma, O algoritmo percorre a lista várias vezes. Em cada passagem, compara pares de elementos adjacentes e se os elementos estiverem na ordem incorreta, eles trocam de lugar. </p>               
+            <p>Esse processo ocorre até que nenhum par precise ser trocado.</p> 
+            <p>No pior caso, a complexidade de tempo é O(n²), o que o torna ineficiente para listas grandes.
+                Exemplo: Para ordenar a lista [5, 3, 8, 4], o algoritmo começaria comparando 5 e 3, trocando-os para [3, 5, 8, 4]. Depois compara 5 e 8 (não troca), e então 8 e 4, resultando em [3, 5, 4, 8]. Repete o processo até que a lista esteja ordenada.</p>  
+            <center><img src="ordenacaobolha.jpg" width="450" height="250"></center>
+
+            <h4><center>Ordenação por seleção</center></h4>
+            <p>A ordenação por seleção é outro algoritmo simples, mas com uma abordagem diferente. Em vez de fazer múltiplas trocas, ele procura o menor (ou maior) elemento em cada iteração e o coloca na posição correta.            </p>
+            <p>Seu funcionamento é da sguinte forma, o algoritmo divide a lista em duas partes: a parte ordenada e a parte desordenada.Em cada passo, ele procura o menor elemento da parte desordenada, quando ele encontra troca o menor elemento com o primeiro elemento da parte desordenada, e assim aumenta a parte ordenada da lista.<br>O processo continua até que toda a lista esteja ordenada.</p>
+            <p>Exemplo: Na lista [5, 3, 8, 4], o algoritmo encontra o menor valor (3) e o troca com o primeiro elemento, resultando em [3, 5, 8, 4]. Depois, procura o próximo menor (4) e o coloca na segunda posição, e assim por diante.
+            </p>
+            <center><img src="ordenacaoselecao.jpg" width="450" height="250"></center>
+
+            <h4><center>Ordenação por Inserção</center></h4>
+            <p>A ordenação por inserção funciona de maneira semelhante ao modo como organizamos cartas em um baralho. O algoritmo constrói a lista final ordenada um elemento por vez, inserindo cada novo elemento na posição correta em relação aos que já foram ordenados.            </p>
+            <p>Ela ocorre da  seguinte forma: o algoritmo considera o primeiro elemento da lista como a lista ordenada. Em cada iteração, ele pega o próximo elemento da parte desordenada e o insere na posição correta na parte ordenada. Esse processo continua até que todos os elementos estejam na lista ordenada.</p>
+            <p>Exemplo: Para ordenar [5, 3, 8, 4], o algoritmo começa com 5 como a lista ordenada. Ele insere 3 antes de 5, resultando em [3, 5]. Depois, 8 é inserido na posição correta, e finalmente 4 é colocado entre 3 e 5, resultando em [3, 4, 5, 8].</p>
+            <center><img src="ordenacaoinserao.jpg" width="450" height="250"></center>
+
+            <p>Esses três algoritmos são fáceis de entender e implementar, mas não são os mais eficientes para listas grandes. No entanto, eles servem como base para o entendimento de algoritmos de ordenação mais avançados.            </p>
+
+        </div>
+        
+        <div class="column side">
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Projeto Bia e JP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+      }
+
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f4f9f9;
+          color: #333;
+      }
+
+      /* Header */
+      h1 {
+          text-align: center;
+          color: #00796b;
+          margin: 20px 0;
+          font-size: 2.5em;
+      }
+
+      /* Top Navigation Bar */
+      .topnav {
+          background: linear-gradient(90deg, #5dd39e, #45a79b);
+          overflow: hidden;
+          text-align: center;
+          padding: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .topnav a {
+          color: white;
+          text-align: center;
+          padding: 14px 30px;
+          text-decoration: none;
+          font-size: 18px;
+          transition: background-color 0.3s ease;
+      }
+
+      .topnav a:hover {
+          background-color: #00796b;
+          border-radius: 5px;
+      }
+
+      /* Form */
+      form {
+          margin: 40px auto;
+          width: 50%;
+          background-color: #e0f7fa;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      form label {
+          font-size: 1.2em;
+          color: #00796b;
+          margin-bottom: 10px;
+          display: block;
+      }
+
+      form input[type="email"] {
+          width: 100%;
+          padding: 6px; /* Altura reduzida */
+          margin: 10px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1em;
+          transition: border 0.3s ease;
+      }
+
+      form input[type="email"]:focus {
+          border-color: #5dd39e;
+      }
+
+      form input[type="submit"] {
+          background-color: #45a79b;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 1.2em;
+          cursor: pointer;
+          border-radius: 5px;
+          width: 100%;
+          transition: background-color 0.3s ease;
+      }
+
+      form input[type="submit"]:hover {
+          background-color: #00796b;
+      }
+
+      /* Table */
+      table {
+          margin: 30px auto;
+          border-collapse: collapse;
+          width: 90%;
+          background-color: white;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          overflow: hidden;
+      }
+
+      table th, table td {
+          padding: 15px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+      }
+
+      table th {
+          background-color: #45a79b;
+          color: white;
+          font-size: 1.2em;
+      }
+
+      table td {
+          color: #333;
+      }
+
+      table tr:hover {
+          background-color: #f1f1f1;
+      }
+
+      table tr:nth-child(even) {
+          background-color: #f9f9f9;
+      }
+
+      /* Responsive */
+      @media screen and (max-width: 768px) {
+          form {
+              width: 90%;
+          }
+
+          .topnav a {
+              padding: 10px;
+          }
+      }     
+      /* Create three unequal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 10px;
+      }
+      
+      /* Left and right column */
+      .column.side {
+        width: 15%;
+      }
+      
+      /* Middle column */
+      .column.middle {
+        width: 70%;
+      }
+      
+      /* Clear floats after the columns */
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      </style>
+</head>
+<body>
+  
+    <div class="header">
+        <h1>Golang</h1>
+        <center><p>Neste site aprenderemos de forma prática sobre como programar em Golang.</p><br></center>
+      </div>
+      
+      <div class="topnav">
+        <a href="tela inicial.html">tela inicial</a>
+        <a href="modulo1gl.html">módulo 1</a>
+        <a href="modulo2gl.html">módulo 2</a>
+        <a href="modulo3gl.html">módulo 3</a>
+        <a href="aplicativogl.html">aplicativo</a>
+    </div> 
+    <div class="row">
+        <div class="column side">
+        </div>
+        
+        <div class="column middle">
+            <br><h2><center>BUSCA E ORDENAÇÃO</center></h2>
+
+            <br><h3><center>BUSCA</center></h3>
+            <p>O algoritmo de busca é amplamente utilizado em Go e muitas outras linguagens de programação para localizar elementos em uma coleção de dados. Dependendo da organização dos dados e da necessidade de otimização, diferentes tipos de algoritmos de busca podem ser utilizados, como a busca linear e a busca binária.</p>
+            
+            <br><h4><center>Busca Linear</center></h4><br>
+            <p>A busca linear é um método simples de pesquisa, em que percorremos todos os elementos de uma lista ou array um a um até encontrar o elemento desejado ou atingir o fim da coleção. É útil em casos onde os dados não estão ordenados.</p>
+            <p>Em Go, um exemplo de busca linear:</p>
+            <br>
+            <pre><code>
+            package main
+            import "fmt"
+            
+            func buscaLinear(arr []int, x int) bool {
+                for _, valor := range arr {
+                    if valor == x {
+                        return true
+                    }
+                }
+                return false
+            }
+            
+            func main() {
+                lista := []int{10, 23, 42, 4, 15}
+                fmt.Println("Número 23 encontrado?", buscaLinear(lista, 23))
+            }
+            </code></pre>
+            <br>
+            
+            <h4><center>Busca Binária</center></h4>
+            <p>A busca binária é mais eficiente que a busca linear, mas requer uma lista ordenada. O algoritmo divide a lista ao meio repetidamente até encontrar o elemento desejado ou determinar que ele não está presente.</p>
+            <p>Em Go, podemos implementar a busca binária assim:</p>
+            <br>
+            <pre><code>
+            package main
+            import "fmt"
+            
+            func buscaBinaria(arr []int, x int) bool {
+                esquerda, direita := 0, len(arr)-1
+                for esquerda <= direita {
+                    meio := (esquerda + direita) / 2
+                    if arr[meio] == x {
+                        return true
+                    }
+                    if arr[meio] < x {
+                        esquerda = meio + 1
+                    } else {
+                        direita = meio - 1
+                    }
+                }
+                return false
+            }
+            
+            func main() {
+                lista := []int{2, 3, 5, 7, 11, 13}
+                fmt.Println("Número 7 encontrado?", buscaBinaria(lista, 7))
+            }
+            </code></pre>
+            <br>
+            
+            <h3><center>ORDENAÇÃO</center></h3><br>
+            <p>O algoritmo de ordenação reorganiza os elementos de uma lista ou array em uma ordem específica, geralmente crescente ou decrescente. Aqui, exploramos três métodos comuns: ordenação por bolha, seleção e inserção.</p>
+            
+            <br><h4><center>Ordenação por Bolha</center></h4>
+            <p>A ordenação por bolha compara elementos adjacentes e os troca se estiverem na ordem incorreta. Esse processo é repetido até que todos os elementos estejam ordenados.</p>
+            <p>Exemplo em Go:</p>
+            <br>
+            <pre><code>
+            package main
+            import "fmt"
+            
+            func ordenacaoBolha(arr []int) {
+                n := len(arr)
+                for i := 0; i < n-1; i++ {
+                    for j := 0; j < n-i-1; j++ {
+                        if arr[j] > arr[j+1] {
+                            arr[j], arr[j+1] = arr[j+1], arr[j]
+                        }
+                    }
+                }
+            }
+            
+            func main() {
+                lista := []int{5, 3, 8, 4}
+                ordenacaoBolha(lista)
+                fmt.Println("Lista ordenada:", lista)
+            }
+            </code></pre>
+            <br>
+            
+           <br> <h4><center>Ordenação por Seleção</center></h4><br>
+            <p>A ordenação por seleção busca o menor (ou maior) elemento e o posiciona corretamente na lista. O processo é repetido para os elementos restantes até que a lista esteja ordenada.</p>
+            <p>Exemplo em Go:</p>
+            <br>
+            <pre><code>
+            package main
+            import "fmt"
+            
+            func ordenacaoSelecao(arr []int) {
+                n := len(arr)
+                for i := 0; i < n-1; i++ {
+                    menor := i
+                    for j := i + 1; j < n; j++ {
+                        if arr[j] < arr[menor] {
+                            menor = j
+                        }
+                    }
+                    arr[i], arr[menor] = arr[menor], arr[i]
+                }
+            }
+            
+            func main() {
+                lista := []int{5, 3, 8, 4}
+                ordenacaoSelecao(lista)
+                fmt.Println("Lista ordenada:", lista)
+            }
+            </code></pre>
+            <br>
+            
+           <br> <h4><center>Ordenação por Inserção</center></h4><br>
+            <p>A ordenação por inserção constrói a lista ordenada um elemento de cada vez, inserindo cada novo elemento na posição correta em relação aos já ordenados.</p>
+            <p>Exemplo em Go:</p>
+            <br>
+            <pre><code>
+            package main
+            import "fmt"
+            
+            func ordenacaoInsercao(arr []int) {
+                for i := 1; i < len(arr); i++ {
+                    chave := arr[i]
+                    j := i - 1
+                    for j >= 0 && arr[j] > chave {
+                        arr[j+1] = arr[j]
+                        j = j - 1
+                    }
+                    arr[j+1] = chave
+                }
+            }
+            
+            func main() {
+                lista := []int{5, 3, 8, 4}
+                ordenacaoInsercao(lista)
+                fmt.Println("Lista ordenada:", lista)
+            }
+            </code></pre>
+            <br>
+            
+            <p>Esses três algoritmos são básicos, mas fornecem um entendimento fundamental dos métodos de ordenação. Para listas maiores, há algoritmos mais eficientes, como quicksort e mergesort.</p>
+        </div>
+        
+        <div class="column side">
+        </div>
+      </div>
+</body>
+</html>

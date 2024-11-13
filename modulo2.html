@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Projeto Bia e JP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+      }
+
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f4f9f9;
+          color: #333;
+      }
+
+      /* Header */
+      h1 {
+          text-align: center;
+          color: #00796b;
+          margin: 20px 0;
+          font-size: 2.5em;
+      }
+
+      /* Top Navigation Bar */
+      .topnav {
+          background: linear-gradient(90deg, #5dd39e, #45a79b);
+          overflow: hidden;
+          text-align: center;
+          padding: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .topnav a {
+          color: white;
+          text-align: center;
+          padding: 14px 30px;
+          text-decoration: none;
+          font-size: 18px;
+          transition: background-color 0.3s ease;
+      }
+
+      .topnav a:hover {
+          background-color: #00796b;
+          border-radius: 5px;
+      }
+
+      /* Form */
+      form {
+          margin: 40px auto;
+          width: 50%;
+          background-color: #e0f7fa;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      form label {
+          font-size: 1.2em;
+          color: #00796b;
+          margin-bottom: 10px;
+          display: block;
+      }
+
+      form input[type="email"] {
+          width: 100%;
+          padding: 6px; /* Altura reduzida */
+          margin: 10px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1em;
+          transition: border 0.3s ease;
+      }
+
+      form input[type="email"]:focus {
+          border-color: #5dd39e;
+      }
+
+      form input[type="submit"] {
+          background-color: #45a79b;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 1.2em;
+          cursor: pointer;
+          border-radius: 5px;
+          width: 100%;
+          transition: background-color 0.3s ease;
+      }
+
+      form input[type="submit"]:hover {
+          background-color: #00796b;
+      }
+
+      /* Table */
+      table {
+          margin: 30px auto;
+          border-collapse: collapse;
+          width: 90%;
+          background-color: white;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          overflow: hidden;
+      }
+
+      table th, table td {
+          padding: 15px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+      }
+
+      table th {
+          background-color: #45a79b;
+          color: white;
+          font-size: 1.2em;
+      }
+
+      table td {
+          color: #333;
+      }
+
+      table tr:hover {
+          background-color: #f1f1f1;
+      }
+
+      table tr:nth-child(even) {
+          background-color: #f9f9f9;
+      }
+
+      /* Responsive */
+      @media screen and (max-width: 768px) {
+          form {
+              width: 90%;
+          }
+
+          .topnav a {
+              padding: 10px;
+          }
+      }     
+      /* Create three unequal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 10px;
+      }
+      
+      /* Left and right column */
+      .column.side {
+        width: 15%;
+      }
+      
+      /* Middle column */
+      .column.middle {
+        width: 70%;
+      }
+      
+      /* Clear floats after the columns */
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      </style>
+</head>
+<body>
+  
+    <div class="header">
+      <h1>Python</h1>
+        <center><p>Neste site aprenderemos de forma prática sobre como programar em Python.</p><br></center>
+      </div>
+      
+      <div class="topnav">
+        <a href="tela inicial.html">tela inicial</a>
+        <a href="modulo1.html">módulo 1</a>
+        <a href="modulo2.html">módulo 2</a>
+        <a href="modulo3.html">módulo 3</a>
+        <a href="aplicativo.html">aplicativo</a>
+    </div> 
+    <div class="row">
+        <div class="column side">
+        </div>
+        
+        <div class="column middle">
+          <h2><center>PROGRAMAS BÁSICOS</center><br></h2>
+          <h3><center>Fatorial</center></h3>
+          <p>O fatorial é uma operação matemática usada no estudo de análise combinatória. Um fatorial é representado por um número seguido de um simbolo de exclamação (!), como exemplo: Quando usamos 5! estamos dizendo que queremos usar o fatorial de 5. Ou seja, no código informado criamos a variável fatorial com o valor 1.</p>
+          <p></p>
+          <center><img src="fatorial.jpg" width="450" height="250"></center>
+
+          <h3><center>Número primo</center></h3>
+          <p>Um número natural é primo se ele possui apenas dois divisores positivos e distintos. Ou seja, um número natural é primo se ele é maior que 1 e é divisível apenas por si próprio e por 1. Um exemplo: o número 2. Ele só é divisível por ele mesmo, e por 1.</p>
+          <p></p>
+          <center><img src="primo.png" width="460" height="360"></center>
+
+          <h3><center>Fibonacci</center></h3>
+          <p>Fibonacci é uma sequência numérica em que cada termo a partir do terceiro é a soma dos dois antecessores. O primeiro termo da sequência de Fibonacci é o número 1 e o segundo termo também é o número 1. O terceiro termo é 2, pois 1+1=2. Já o quarto termo é 3, pois 1+2=3.</p>
+          <center><img src="fibonacci.png" width="450" height="250"></center>
+
+          
+          <h3><center>Euler</center></h3>
+          <p>é um procedimento numérico de primeira ordem para solucionar equações diferenciais ordinárias com um valor inicial dado. O número de Euler, uma constante fundamental em matemática, é calculado pelo somatório de 1/(n!) com "n" variando de 0 até o infinito.</p>
+          <center><img src="euler.jpg" width="450" height="250"></center>
+
+          <h3><center>Vetor</center></h3>
+          <p>um vetor é uma sequência de dados ocupando posições consecutivas de memória e por isso existe uma ordem natural (o primeiro elemento, o segundo e assim por diante). A grande vantagem de usar vetor é poder trabalhar com um grande número de variáveis utilizando um único nome (para a variável). Para isso existe uma sintaxe especial para pegar elementos do vetor em posições específicas (como o primeiro elemento ou o décimo elemento).</p>
+          <p>Eventualmente é interessante implementar um código que possibilite a entrada de vários valores, com um único ENTER. Por exemplo, se estiver copiando uma sequência de dados de uma tabela.</p>      
+          <p>Para fazer isso em Python é necessário algum "truque" para, ler tudo como uma cadeia de caracteres (string), depois quebrá-la e transformar nos valores adequados.</p>
+          <center><img src="vetor.jpg" width="450" height="250"></center>
+
+          <h3><center>Matriz</center></h3>
+          <p>Uma vez que um vetor/lista é armazenado consecutivamente na memória, então podemos armazenar vários vetores também consecutivamente para obter algo que represente (e seja tratado como) matriz.</p>
+          <p>Por exemplo, alocamos nl vetores consecutivos na memória, cada vetor com nc posições de memória, desde vet[0] até vet[nc-1]. Assim, podemos ver este agregado de dados como uma matriz mat[][], cuja primeira linha é o primeiro vetor e assim por diante. Desse modo obtemos uma estrutura com dois índices que pode ser manipulada como uma matriz (como em mat[i][j]). No exemplo abaixo ilustramos isso de dois modos, imprimindo as linhas da matriz e mostrando que pode-se passar como parâmetro uma linha de matriz para uma função que tenha como parâmetro formal um vetor.</p>
+          <center><img src="matriz.jpg" width="450" height="250"></center>
+
+          <h3><center>Arquivo</center></h3> 
+          <h4>-criação</h4>
+          <p>Para abrir um arquivo, o Python possui a função open(). Ela recebe dois parâmetros: o primeiro é o nome do arquivo a ser aberto, e o segundo parâmetro é o modo que queremos trabalhar com esse arquivo - se queremos ler ou escrever. O modo é passado através de uma string: "w" (abreviação para write) para escrita e "r" (abreviação para read) para leitura.</p>
+          <p>É importante saber que o modo de escrita sobrescreve o arquivo, se o mesmo existir. Se a intenção é apenas adicionar conteúdo ao arquivo, utilizamos o modo "a" (abreviação para append). Para começar a escrever no arquivo basta chamar a partir do arquivo a função write(), passando para ela o que se quer escrever no arquivo</p>
+          <p>Quando estamos trabalhando com arquivos, devemos nos preocupar em fechá-lo. Para fechá-lo usamos a função close() Após isso, podemos verificar o conteúdo do arquivo. Se você tentar fechar um arquivo que já está fechado, não vai surtir efeito algum, nem mesmo um erro.</p>
+          <center><img src="arquivo.jpg" width="450" height="250"></center>
+
+          <h4>-leitura de arquivo</h4>
+          <p></p>
+          <center><img src="lerarquivo.jpg" width="450" height="250"></center>
+
+          <h4>-excluir arquivo</h4>
+          <center><img src="excluirarquivo.jpg" width="450" height="250"></center>
+        </div>
+        
+        <div class="column side">
+        </div>
+      </div>
+</body>
+</html>

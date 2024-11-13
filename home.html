@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Projeto Bia e JP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+        }
+        
+        /* Style the header */
+        .header {
+          background-color: rgb(221, 244, 253);
+          padding: 20px;
+          text-align: center;
+        }
+        
+        /* Style the top navigation bar */
+        .topnav {
+          overflow: hidden;
+          background-color:  rgb(58, 209, 156) ;
+        }
+        
+        /* Style the topnav links */
+        .topnav a {
+          float: left;
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 14px 124.2px;
+          text-decoration: none;
+        }
+        
+        /* Change color on hover */
+        .topnav a:hover {
+          background-color:  rgb(68, 195, 142);
+          color: black;
+        }
+        
+        /* Create three unequal columns that floats next to each other */
+        .column {
+          float: left;
+          padding: 10px;
+        }
+        
+        /* Left and right column */
+        .column.side {
+          width: 15%;
+        }
+        
+        /* Middle column */
+        .column.middle {
+          width: 70%;
+        }
+        
+        /* Clear floats after the columns */
+        .row::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column.side, .column.middle {
+            width: 100%;
+          }
+        }
+        </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Python</h1>
+        <p>Neste site aprenderemos de forma prática sobre como programar em Python.</p>
+      </div>
+      
+      <div class="topnav">
+          <a href="home.html">início</a>
+          <a href="modulo1.html">módulo 1</a>
+          <a href="modulo2.html">módulo 2</a>
+          <a href="modulo3.html">módulo 3</a>
+          <a href="aplicativo.html">aplicativo</a>
+      </div> 
+      <div class="row">
+        <div class="column side">
+        </div>
+        
+        <div class="column middle">
+            
+        </div>
+        
+        <div class="column side">
+        </div>
+      </div>
+</body>
+</html>

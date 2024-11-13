@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Projeto Bia e JP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+      }
+
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f4f9f9;
+          color: #333;
+      }
+
+      /* Header */
+      h1 {
+          text-align: center;
+          color: #00796b;
+          margin: 20px 0;
+          font-size: 2.5em;
+      }
+
+      /* Top Navigation Bar */
+      .topnav {
+          background: linear-gradient(90deg, #5dd39e, #45a79b);
+          overflow: hidden;
+          text-align: center;
+          padding: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .topnav a {
+          color: white;
+          text-align: center;
+          padding: 14px 30px;
+          text-decoration: none;
+          font-size: 18px;
+          transition: background-color 0.3s ease;
+      }
+
+      .topnav a:hover {
+          background-color: #00796b;
+          border-radius: 5px;
+      }
+
+      /* Form */
+      form {
+          margin: 40px auto;
+          width: 50%;
+          background-color: #e0f7fa;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      form label {
+          font-size: 1.2em;
+          color: #00796b;
+          margin-bottom: 10px;
+          display: block;
+      }
+
+      form input[type="email"] {
+          width: 100%;
+          padding: 6px; /* Altura reduzida */
+          margin: 10px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1em;
+          transition: border 0.3s ease;
+      }
+
+      form input[type="email"]:focus {
+          border-color: #5dd39e;
+      }
+
+      form input[type="submit"] {
+          background-color: #45a79b;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 1.2em;
+          cursor: pointer;
+          border-radius: 5px;
+          width: 100%;
+          transition: background-color 0.3s ease;
+      }
+
+      form input[type="submit"]:hover {
+          background-color: #00796b;
+      }
+
+      /* Table */
+      table {
+          margin: 30px auto;
+          border-collapse: collapse;
+          width: 90%;
+          background-color: white;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          overflow: hidden;
+      }
+
+      table th, table td {
+          padding: 15px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+      }
+
+      table th {
+          background-color: #45a79b;
+          color: white;
+          font-size: 1.2em;
+      }
+
+      table td {
+          color: #333;
+      }
+
+      table tr:hover {
+          background-color: #f1f1f1;
+      }
+
+      table tr:nth-child(even) {
+          background-color: #f9f9f9;
+      }
+
+      /* Responsive */
+      @media screen and (max-width: 768px) {
+          form {
+              width: 90%;
+          }
+
+          .topnav a {
+              padding: 10px;
+          }
+      }     
+      /* Create three unequal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 10px;
+      }
+      
+      /* Left and right column */
+      .column.side {
+        width: 15%;
+      }
+      
+      /* Middle column */
+      .column.middle {
+        width: 70%;
+      }
+      
+      /* Clear floats after the columns */
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      </style>
+</head>
+<body>
+  
+    <div class="header">
+      <h1>Golang</h1>
+        <center><p>Neste site aprenderemos de forma prática sobre como programar em Golang.</p><br></center>
+      </div>
+      
+      <div class="topnav">
+        <a href="tela inicial.html">tela inicial</a>
+        <a href="modulo1gl.html">módulo 1</a>
+        <a href="modulo2gl.html">módulo 2</a>
+        <a href="modulo3gl.html">módulo 3</a>
+        <a href="aplicativogl.html">aplicativo</a>
+    </div> 
+    <div class="row">
+        <div class="column side">
+        </div>
+        
+        <div class="column middle">
+           <br> <h2><center>INSTALAÇÃO</center><br></h2>
+
+            <header>
+              <Center> <video src="./videogllp.mp4.mkv"
+                controls
+                width="400"
+                >
+                </video> </Center>
+            </header>
+            <br>
+            <h3>Instalação no Windows:</h3>
+            <p>A instalação do Go no Windows é similar a de outros programas (next, next, next, finish). Siga os passos a seguir para realizar a instalação:
+            <br><br>
+            1) Acesse a página oficial do Go para realizar o download do instalador. <br>
+            2) Navegue até a pasta onde o instalador foi baixado. <br>
+            3) Clique com o botão direito no instalador e selecione “Executar como Administrador”. <br>
+            4) Com o instalador aberto, certifique-se de que o local de instalação é adequado e siga as instruções na tela. <br>
+            5) Por fim, clique em “Install” e prossiga com o processo padrão de instalação. <br><br>
+            Para verificar se a instalação foi bem-sucedida, abra o Prompt de Comando ou o Power Shell e digite o comando abaixo:
+            <br><br>
+            go version
+            </p>
+            <br>
+            <h3>Instalação no Linux:</h3>
+            <p>Para instalar o Go no Linux, siga os passos abaixo:
+            <br><br>
+            1) Baixe o arquivo .tar.gz do site oficial do Go para a versão Linux. <br>
+            2) Extraia o arquivo usando o comando:<br>
+            sudo tar -C /usr/local -xzf go1.x.x.linux-amd64.tar.gz<br><br>
+            3) Adicione o caminho do Go ao PATH do sistema, adicionando as linhas abaixo ao final do arquivo ~/.profile ou ~/.bashrc:<br>
+            export PATH=$PATH:/usr/local/go/bin<br><br>
+            4) Recarregue o perfil com o comando:<br>
+            source ~/.profile<br><br>
+            Para verificar a instalação, execute:<br>
+            go version
+            </p>
+            <br>
+            <h3>Instalação no macOS:</h3>
+            <p>A instalação do Go no macOS segue um processo padrão:<br><br>
+            1) Baixe o instalador .pkg para macOS do site oficial do Go.<br>
+            2) Dê um duplo clique no arquivo e siga as instruções de instalação na tela.<br><br>
+            Para verificar a instalação, abra o Terminal e execute:<br>
+            go version
+            </p>
+            <br>
+            <h2><center>Vantagens</center></h2>
+            <h3>Golang é Simples e Eficiente</h3>
+            <p>Golang é uma linguagem minimalista e fácil de aprender, ideal para novos programadores e para desenvolvedores experientes que buscam produtividade.</p>
+            
+            <h3>Performance Elevada</h3>
+            <p>Como linguagem compilada, o Go gera código de máquina diretamente, proporcionando uma performance superior em comparação a linguagens interpretadas.</p>
+            
+            <h3>Gerenciamento de Memória Eficiente</h3>
+            <p>O Go possui um coletor de lixo (garbage collector) altamente eficiente, oferecendo bom desempenho em gerenciamento de memória.</p>
+            
+            <h3>Paralelismo Nativo</h3>
+            <p>Golang possui suporte nativo a goroutines, facilitando a criação de programas com paralelismo e escalabilidade.</p>
+            <br>
+            <h2><center>Desvantagens</center></h2>
+            <h3>Biblioteca Padrão Limitada</h3>
+            <p>A biblioteca padrão do Go não é tão rica quanto a de outras linguagens, o que pode exigir o uso de bibliotecas de terceiros.</p>
+            
+            <h3>Falta de Generics</h3>
+            <p>Embora o suporte a generics tenha sido introduzido recentemente, ele ainda está em evolução, limitando certas operações para usuários que vêm de linguagens como Java.</p>
+            <br>
+            <h2><center>Aplicações</center></h2>
+            <ul>
+              <li>Desenvolvimento de sistemas distribuídos e em nuvem</li>
+              <li>Desenvolvimento de ferramentas de linha de comando</li>
+              <li>Desenvolvimento de servidores web de alta performance</li>
+              <li>Desenvolvimento de sistemas de rede e aplicações de backend</li>
+            </ul>
+            <br>
+            <h2><center>Conceitos Básicos</center></h2>
+            <h3>Declaração de Variáveis</h3>
+            <p>Em Go, variáveis são tipadas estaticamente. Você pode declarar variáveis usando a palavra-chave <code>var</code> ou o operador curto <code>:=</code>.</p>
+           <br> <p><code>var idade int = 25</code><br><code>nome := "João"</code></p><br>
+            
+            <h3>Estruturas de Controle</h3>
+            <p>O Go oferece estruturas de controle, como <code>if</code>, <code>for</code> e <code>switch</code>, para controlar o fluxo do programa.</p>
+           <br> <p><code>if idade >= 18 {<br>fmt.Println("Maior de idade")<br>} else {<br>fmt.Println("Menor de idade")<br>}</code></p><br>
+            
+            <h3>Laços de Repetição</h3>
+            <p>Em Go, o laço <code>for</code> é o único loop disponível, mas ele cobre diversos casos de repetição.</p>
+           <br> <p><code>for i := 0; i < 5; i++ {<br>fmt.Println(i)<br>}</code></p><br>
+            
+            <h3>Funções</h3>
+            <p>Funções são definidas com a palavra-chave <code>func</code>.</p>
+           <br> <p><code>func saudacao(nome string) string {<br>return "Olá, " + nome<br>}</code><br><code>fmt.Println(saudacao("Maria"))</code></p>
+           <br>
+            <h3>Comentários</h3>
+            <p>Comentários em Go são precedidos por <code>//</code> para uma linha ou <code>/* ... */</code> para múltiplas linhas.</p>
+            
+            <h3>Estruturas de Dados: Arrays, Slices e Maps</h3>
+            <p>O Go possui <b>arrays</b> de tamanho fixo e <b>slices</b> de tamanho dinâmico.</p>
+            <br><p><code>nomes := []string{"João", "Maria", "José"}</code><br><code>idade := map[string]int{"João": 30, "Maria": 25}</code></p><br>
+            
+            <h3>Goroutines e Channels</h3>
+            <p>Goroutines são a forma de Go para concorrência leve e canais são utilizados para comunicação entre goroutines.</p>
+            <br><p><code>go func() {<br>fmt.Println("Hello from goroutine")<br>}()</code><br><code>ch := make(chan int)</code></p><br>
+        </div>
+        
+        <div class="column side">
+        </div>
+      </div>
+</body>
+</html>

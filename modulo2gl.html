@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Projeto Bia e JP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+      }
+
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f4f9f9;
+          color: #333;
+      }
+
+      /* Header */
+      h1 {
+          text-align: center;
+          color: #00796b;
+          margin: 20px 0;
+          font-size: 2.5em;
+      }
+
+      /* Top Navigation Bar */
+      .topnav {
+          background: linear-gradient(90deg, #5dd39e, #45a79b);
+          overflow: hidden;
+          text-align: center;
+          padding: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .topnav a {
+          color: white;
+          text-align: center;
+          padding: 14px 30px;
+          text-decoration: none;
+          font-size: 18px;
+          transition: background-color 0.3s ease;
+      }
+
+      .topnav a:hover {
+          background-color: #00796b;
+          border-radius: 5px;
+      }
+
+      /* Form */
+      form {
+          margin: 40px auto;
+          width: 50%;
+          background-color: #e0f7fa;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      form label {
+          font-size: 1.2em;
+          color: #00796b;
+          margin-bottom: 10px;
+          display: block;
+      }
+
+      form input[type="email"] {
+          width: 100%;
+          padding: 6px; /* Altura reduzida */
+          margin: 10px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1em;
+          transition: border 0.3s ease;
+      }
+
+      form input[type="email"]:focus {
+          border-color: #5dd39e;
+      }
+
+      form input[type="submit"] {
+          background-color: #45a79b;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 1.2em;
+          cursor: pointer;
+          border-radius: 5px;
+          width: 100%;
+          transition: background-color 0.3s ease;
+      }
+
+      form input[type="submit"]:hover {
+          background-color: #00796b;
+      }
+
+      /* Table */
+      table {
+          margin: 30px auto;
+          border-collapse: collapse;
+          width: 90%;
+          background-color: white;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          overflow: hidden;
+      }
+
+      table th, table td {
+          padding: 15px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+      }
+
+      table th {
+          background-color: #45a79b;
+          color: white;
+          font-size: 1.2em;
+      }
+
+      table td {
+          color: #333;
+      }
+
+      table tr:hover {
+          background-color: #f1f1f1;
+      }
+
+      table tr:nth-child(even) {
+          background-color: #f9f9f9;
+      }
+
+      /* Responsive */
+      @media screen and (max-width: 768px) {
+          form {
+              width: 90%;
+          }
+
+          .topnav a {
+              padding: 10px;
+          }
+      }     
+      /* Create three unequal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 10px;
+      }
+      
+      /* Left and right column */
+      .column.side {
+        width: 15%;
+      }
+      
+      /* Middle column */
+      .column.middle {
+        width: 70%;
+      }
+      
+      /* Clear floats after the columns */
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      </style>
+</head>
+<body>
+  
+    <div class="header">
+        <h1>Golang</h1>
+        <center><p>Neste site aprenderemos de forma prática sobre como programar em Golang.</p><br></center>
+      </div>
+      
+      <div class="topnav">
+        <a href="tela inicial.html">tela inicial</a>
+        <a href="modulo1gl.html">módulo 1</a>
+        <a href="modulo2gl.html">módulo 2</a>
+        <a href="modulo3gl.html">módulo 3</a>
+        <a href="aplicativogl.html">aplicativo</a>
+    </div> 
+    <div class="row">
+        <div class="column side">
+        </div>
+        
+        <div class="column middle">
+            <h2><center>PROGRAMAS BÁSICOS</center><br></h2>
+
+            <h3><center>Fatorial</center></h3>
+            <p>O fatorial é uma operação matemática usada no estudo de análise combinatória. Um fatorial é representado por um número seguido de um símbolo de exclamação (!), como exemplo: Quando usamos 5! estamos dizendo que queremos o fatorial de 5. No código, criamos uma função que calcula o fatorial utilizando um loop ou recursão, acumulando o produto dos números.</p>
+            <br><pre><code>
+                package main
+                import "fmt"
+                
+                func fatorial(n int) int {
+                    if n == 0 {
+                        return 1
+                    }
+                    resultado := 1
+                    for i := 1; i <= n; i++ {
+                        resultado *= i
+                    }
+                    return resultado
+                }
+                
+                func main() {
+                    fmt.Println("Fatorial de 5:", fatorial(5))
+                }
+                </code></pre><br>
+            
+            <h3><center>Número primo</center></h3>
+            <p>Um número natural é primo se ele possui apenas dois divisores positivos e distintos. Ou seja, um número natural é primo se ele é maior que 1 e é divisível apenas por si próprio e por 1. Por exemplo: o número 2. Ele só é divisível por ele mesmo e por 1.</p>
+            <br><pre><code>
+                package main
+                import "fmt"
+                
+                func ehPrimo(n int) bool {
+                    if n <= 1 {
+                        return false
+                    }
+                    for i := 2; i*i <= n; i++ {
+                        if n%i == 0 {
+                            return false
+                        }
+                    }
+                    return true
+                }
+                
+                func main() {
+                    fmt.Println("7 é primo?", ehPrimo(7))
+                }
+                </code></pre><br>
+            
+            <h3><center>Fibonacci</center></h3>
+            <p>A sequência de Fibonacci é uma sequência numérica em que cada termo, a partir do terceiro, é a soma dos dois anteriores. Em Go, essa sequência pode ser calculada usando uma função iterativa ou recursiva, armazenando os resultados para otimizar o desempenho.</p>
+            <br><pre><code>
+                package main
+                import "fmt"
+                
+                func fibonacci(n int) int {
+                    if n <= 1 {
+                        return n
+                    }
+                    return fibonacci(n-1) + fibonacci(n-2)
+                }
+                
+                func main() {
+                    fmt.Println("Fibonacci de 6:", fibonacci(6))
+                }
+                </code></pre><br>
+                
+            
+            <h3><center>Euler</center></h3>
+            <p>O método de Euler é um procedimento numérico de primeira ordem para resolver equações diferenciais ordinárias com um valor inicial. O número de Euler, uma constante fundamental em matemática, pode ser aproximado com somatórios em Go, onde a série infinita é truncada conforme necessário.</p>
+           <br> <pre><code>
+                package main
+                import "fmt"
+                
+                func eulerAprox(precisao int) float64 {
+                    resultado := 1.0
+                    fatorial := 1
+                    for i := 1; i <= precisao; i++ {
+                        fatorial *= i
+                        resultado += 1.0 / float64(fatorial)
+                    }
+                    return resultado
+                }
+                
+                func main() {
+                    fmt.Println("Aproximação de Euler:", eulerAprox(10))
+                }
+                </code></pre><br>
+            
+            <h3><center>Vetor</center></h3>
+            <p>Em Go, um vetor (array) é uma sequência de elementos com tamanho fixo. Para uma sequência dinâmica, utilizamos um slice. Slices são flexíveis e permitem operações como adicionar elementos dinamicamente, o que facilita a manipulação de grandes quantidades de dados.</p>
+            <br><pre><code>
+                package main
+                import "fmt"
+                
+                func main() {
+                    // Definindo um array fixo
+                    var array [5]int = [5]int{1, 2, 3, 4, 5}
+                
+                    // Definindo um slice dinâmico
+                    slice := []int{1, 2, 3, 4, 5}
+                
+                    // Adicionando elementos no slice
+                    slice = append(slice, 6)
+                
+                    fmt.Println("Array:", array)
+                    fmt.Println("Slice:", slice)
+                }
+                </code></pre><br>
+            
+            <h3><center>Matriz</center></h3>
+            <p>Em Go, podemos representar uma matriz como um slice de slices. Cada slice representa uma linha da matriz, e seus elementos são acessados por índices duplos, como `mat[i][j]`. Isso permite armazenar e manipular dados bidimensionais, como tabelas de valores.</p>
+            <br><pre><code>
+                package main
+                import "fmt"
+                
+                func main() {
+                    matriz := [][]int{
+                        {1, 2, 3},
+                        {4, 5, 6},
+                        {7, 8, 9},
+                    }
+                
+                    // Exibindo a matriz
+                    for _, linha := range matriz {
+                        fmt.Println(linha)
+                    }
+                }
+                </code></pre><br>
+
+            <h3><center>Arquivo</center></h3>
+            
+            <h4>- Criação</h4>
+            <p>Para abrir e manipular arquivos em Go, usamos o pacote `os`. A função `os.Create()` cria um arquivo para escrita. Já `os.OpenFile()` permite especificar modos como leitura e gravação com permissões adicionais.</p>
+            <p>Para escrever no arquivo, utilizamos `Write()` ou `WriteString()`, e é importante fechar o arquivo após o uso com `Close()`.</p>
+            <br><pre><code>
+                package main
+                import (
+                    "fmt"
+                    "os"
+                )
+                
+                func main() {
+                    // Criando um arquivo
+                    arquivo, err := os.Create("exemplo.txt")
+                    if err != nil {
+                        fmt.Println("Erro ao criar arquivo:", err)
+                        return
+                    }
+                    defer arquivo.Close()
+                
+                    // Escrevendo no arquivo
+                    _, err = arquivo.WriteString("Hello, Golang!")
+                    if err != nil {
+                        fmt.Println("Erro ao escrever no arquivo:", err)
+                    }
+                }
+                </code></pre><br>
+            
+            <h4>- Leitura de Arquivo</h4>
+            <p>Para ler um arquivo em Go, utilizamos a função `os.Open()` e lemos o conteúdo usando funções como `Read()` ou `bufio.NewScanner()` para leitura linha a linha. Lembrando de fechar o arquivo com `Close()` após terminar a leitura.</p>
+            <br><pre><code>
+                package main
+                import (
+                    "fmt"
+                    "os"
+                    "bufio"
+                )
+                
+                func main() {
+                    arquivo, err := os.Open("exemplo.txt")
+                    if err != nil {
+                        fmt.Println("Erro ao abrir arquivo:", err)
+                        return
+                    }
+                    defer arquivo.Close()
+                
+                    scanner := bufio.NewScanner(arquivo)
+                    for scanner.Scan() {
+                        fmt.Println(scanner.Text())
+                    }
+                }
+                </code></pre><br>
+            
+            <h4>- Excluir Arquivo</h4>
+            <p>Para excluir um arquivo, utilizamos a função `os.Remove()`, passando o nome do arquivo que queremos excluir. Caso o arquivo não exista, será retornado um erro.</p>
+            <br> <pre><code>
+                package main
+                import (
+                    "fmt"
+                    "os"
+                    "bufio"
+                )
+                
+                func main() {
+                    arquivo, err := os.Open("exemplo.txt")
+                    if err != nil {
+                        fmt.Println("Erro ao abrir arquivo:", err)
+                        return
+                    }
+                    defer arquivo.Close()
+                
+                    scanner := bufio.NewScanner(arquivo)
+                    for scanner.Scan() {
+                        fmt.Println(scanner.Text())
+                    }
+                }
+                </code></pre><br>
+        </div>
+        
+        <div class="column side">
+        </div>
+      </div>
+</body>
+</html>

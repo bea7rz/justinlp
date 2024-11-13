@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Projeto Bia e JP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+      }
+
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f4f9f9;
+          color: #333;
+      }
+
+      /* Header */
+      h1 {
+          text-align: center;
+          color: #00796b;
+          margin: 20px 0;
+          font-size: 2.5em;
+      }
+
+      /* Top Navigation Bar */
+      .topnav {
+          background: linear-gradient(90deg, #5dd39e, #45a79b);
+          overflow: hidden;
+          text-align: center;
+          padding: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .topnav a {
+          color: white;
+          text-align: center;
+          padding: 14px 30px;
+          text-decoration: none;
+          font-size: 18px;
+          transition: background-color 0.3s ease;
+      }
+
+      .topnav a:hover {
+          background-color: #00796b;
+          border-radius: 5px;
+      }
+
+      /* Form */
+      form {
+          margin: 40px auto;
+          width: 50%;
+          background-color: #e0f7fa;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      form label {
+          font-size: 1.2em;
+          color: #00796b;
+          margin-bottom: 10px;
+          display: block;
+      }
+
+      form input[type="email"] {
+          width: 100%;
+          padding: 6px; /* Altura reduzida */
+          margin: 10px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1em;
+          transition: border 0.3s ease;
+      }
+
+      form input[type="email"]:focus {
+          border-color: #5dd39e;
+      }
+
+      form input[type="submit"] {
+          background-color: #45a79b;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 1.2em;
+          cursor: pointer;
+          border-radius: 5px;
+          width: 100%;
+          transition: background-color 0.3s ease;
+      }
+
+      form input[type="submit"]:hover {
+          background-color: #00796b;
+      }
+
+      /* Table */
+      table {
+          margin: 30px auto;
+          border-collapse: collapse;
+          width: 90%;
+          background-color: white;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          overflow: hidden;
+      }
+
+      table th, table td {
+          padding: 15px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+      }
+
+      table th {
+          background-color: #45a79b;
+          color: white;
+          font-size: 1.2em;
+      }
+
+      table td {
+          color: #333;
+      }
+
+      table tr:hover {
+          background-color: #f1f1f1;
+      }
+
+      table tr:nth-child(even) {
+          background-color: #f9f9f9;
+      }
+
+      /* Responsive */
+      @media screen and (max-width: 768px) {
+          form {
+              width: 90%;
+          }
+
+          .topnav a {
+              padding: 10px;
+          }
+      }     
+      /* Create three unequal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 10px;
+      }
+      
+      /* Left and right column */
+      .column.side {
+        width: 15%;
+      }
+      
+      /* Middle column */
+      .column.middle {
+        width: 70%;
+      }
+      
+      /* Clear floats after the columns */
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      </style>
+</head>
+<body>
+  
+    <div class="header">
+      <h1>Python</h1>
+        <center><p>Neste site aprenderemos de forma prática sobre como programar em Python.</p><br></center>
+      </div>
+      
+      <div class="topnav">
+        <a href="tela inicial.html">tela inicial</a>
+        <a href="modulo1.html">módulo 1</a>
+        <a href="modulo2.html">módulo 2</a>
+        <a href="modulo3.html">módulo 3</a>
+        <a href="aplicativo.html">aplicativo</a>     
+    </div> 
+
+  
+    <div class="row">
+        <div class="column side">
+        </div>
+        
+        <div class="column middle">
+            <h2><center>INSTALAÇÃO</center><br></h2>
+
+            <header>
+              <Center> <video src="./videolp.mp4"
+                controls
+                width="400"
+                >
+                </video> </Center>
+            </header>
+
+            <h3>Instalação no Windows: <br></h3>
+            <p>A instalação do Python no Windows segue o padrão da maioria dos programas instalados no sistema operacional em questão (next, next, next, finish) com uma única ressalva: no início do processo de instalação, deve-se selecionar a opção “Add Python 3.8 to PATH”. Com isso, o Windows saberá onde está localizado o interpretador do Python e, assim, conseguiremos utilizá-lo sem problemas. <br><br>
+              1)Acesse a página oficial para realizar o download do instalador do Python na versão 3.8. <br>
+              2)Vá até a pasta na qual foi feito o download do instalador do Python 3.8. <br>
+              3)Clique com o botão direito em cima do instalador. <br>
+              4)Clique na opção “Executar como Administrador”. <br>
+              5)Com o instalador aberto tenha a certeza de ter marcado as opções “Add Python 3.8 to PATH” para que o comando python fique disponível. <br>
+              6)Por fim clique em “Install Now” e siga o processo padrão de instalação de programas no Windows (next, next, next, finish). <br><br>
+              Para verificar se a instalação foi realizada com sucesso basta abrir algum terminal do Windows (Prompt de Comando ou Power Shell) e digitar o comando abaixo: <br><br>
+              
+              python --version <br><br><br>
+
+              <h3>Instalação no Linux: <br></h3>
+              Por padrão, o Python já vem instalado nos sistemas baseados em Debian (como o Ubuntu e o Mint), porém dependendo da versão do seu sistema você terá uma versão diferente do Python. Sendo assim, primeiramente devemos verificar se o Python está instalado na nossa máquina e em qual versão. Para isso, execute o comando abaixo para verificar a existência (ou não) do Python 3.8: <br><br>
+              
+              python3 --version <br><br>
+
+              Ao executar o comando acima, será retornado a versão do Python 3 instalado em sua máquina. Caso seja retornado algum erro, isso indica que o interpretador do Python ainda não está instalado. <br>
+              Caso seja retornada uma versão inferior ao Python 3.8 fica sendo sua decisão instalar uma versão mais recente ou não, qualquer versão superior ou igual a versão 3.6 já é o suficiente para desenvolver seus projetos utilizando a grande maioria dos recursos da linguagem. <br>
+              Sendo assim, caso necessite realizar a instalação, basta executar o seguinte comando: <br><br>
+
+              sudo apt install python3.8 <br><br>
+
+              Este comando irá instalar o interpretador do Python em sua versão 3.8.x. <br>
+
+              Caso você já tenha uma versão do Python instalada no seu Linux e mesmo assim optou por instalar a versão 3.8, o seu sistema operacional terá duas versões do Python, uma versão é a padrão do sistema que pode ser acessado através do comando python3 e a outra versão é a que foi instalada por você que será acessível através do comando python3.8. <br><br><br>
+
+              <h3>Instalação no MacOS: <br></h3>
+              A instalação do Python em ambientes MacOS segue a mesma ideia do Windows, onde o processo de instalação é o “padrão” (next, next, next, finish), para realizar o download do instalador acesse o site oficial do Python. Ao final do processo, podemos abrir o terminal do Mac e com o comando abaixo, verificar se a instalação foi feita com sucesso. <br><br><br>
+
+              Além disso precisamos instalar o pip, pois diferente dos assistentes de instalação do Python para os sistemas Windows e MacOS ao instalar o Python via apt no Linux a ferramenta pip não é instalada em conjunto. <br>
+              O pip é um gerenciador de pacotes para projetos Python, é através dele que podemos instalar, remover e atualizar pacotes em nossos projetos, para saber mais sobre o pip recomendo a leitura do artigo Gerenciando pacotes em projetos Python com o PIP. <br>
+              Para realizar a instalação do pip execute o comando abaixo: <br><br>
+
+              sudo apt install python3-pip <br><br>
+
+              Caso você esteja em um sistema derivado do Debian como o Ubuntu por exemplo, é necessário instalar os binários da biblioteca venv caso você queira utilizar ambientes virtuais em seu ambiente de desenvolvimento, para saber mais sobre ambientes virtuais aqui mesmo no blog da TreinaWeb temos o artigo Criando ambientes virtuais para projetos Python com o Virtualenv. <br>
+              Para realizar a instalação dos binários da biblioteca venv basta executar o comando abaixo: <br><br>
+
+              sudo apt install python3-venv <br><br>
+
+              <h2><center>Vantagens</center><br></h2>
+                <h3>Python é fácil de Ler, escrever e Aprender <br></h3>
+                Como o Python é uma linguagem de programação de alto nível, se torna uma linguagem fácil de ler e entender. <br>
+                Python é mesmo fácil de aprender , e por isso é altamente recomendada para iniciantes hoje em dia. Com o Python você precisa de menos linhas de código para realizar as mesmas tarefas se comparado com linguagens como Java ou C++. <br><br>
+
+                <h3>O Python é uma linguagem interpretada <br></h3>
+                Uma linguagem interpretada significa que o código é executado linha por linha, em caso de algum erro ele para sua execução e avisa qual erro que ocorreu, e o Python funciona dessa forma. <br>
+                Python mostra somente um erro mesmo se o programa tiver vários erros, facilitando o processo de “debug” do código. <br><br>
+
+                <h3>Melhora a Produtividade<br></h3>
+                Por ser fácil de escrever e programar, Python melhora significativamente a produtividade dos programadores. Devido a sua simplicidade, desenvolvedores podem focar na solução do problema e não perdem muito tempo tentando entender a sintaxe. <br><br>
+
+                <h3>Declaração de Variáveis <br></h3>
+                O Python automaticamente define o tipo da variável durante sua execução, ou seja, o programador não precisa se preocupar em declarar variáveis e seus tipos. <br>
+                Para criá-las, basta utilizar um comando de atribuição, que define seu tipo e seu valor, conforme vemos no código abaixo: <br><br>
+                mensagem = 'Exemplo de mensagem!' <br>
+                numero = 36 <br>
+                real = 3.141592653589931 <br><br>
+
+                <h3>Python é multiplataforma</h3>
+                O Python é uma linguagem que pode ser utilizada para diversas plataformas como Windows, Linux, Mac, Android… Isso é possível por ela ser uma linguagem interpretada, ou seja outras máquinas virtuais podem interpretar seu código. <br><br>
+
+                <h3>Python é Open Source</h3>
+                Isso significa que você pode baixar o código-fonte, modificar e até distribuir sua versão do Python (Muitas empresas usam para casos específicos). Ele é gratuito para uso e distribuição. <br><br>
+
+                <h2><center>Desvantagens</center><br></h2>
+                  <h3>Python é Lento <br></h3>
+                  Geralmente linguagens interpretadas são mais lentas, e é por isso que o Python também sofre desse mal. A natureza dinâmica do Python é responsável pela sua baixa velocidade de processamento, pois existe um trabalho extra enquanto executa o código. Portanto é bom evitar o uso de Python em aplicações que precisam de uma melhor performance na velocidade. <br><br>
+
+                  <h3>Python é ruim para Mobile <br></h3>
+                  As aplicações escritas em Python geralmente são utilizadas em server-side. Isso ocorre, pelo motivo anterior: tem um baixo poder de processamento se comparado com outras linguagens para dispositivos móveis. <br><br>
+
+                  <h3>Acesso ao Banco de Dados <br></h3>
+                  Quando interagimos com o banco de dados deixa a desejar. A camada de acesso ao Banco de Dados do Python ainda é muito primitiva e mal feita em comparação a outras linguagens de programação populares. Por exemplo: o java que utiliza JDBC e ODBC. <br><br>
+
+                  <h3>Erros de Execução <br></h3>
+                  No Python o tipo de variável pode ser modificado a qualquer momento, isso pode ser uma vantagem, como também uma desvantagem, pois essa situação se não for bem controlada pode causar Runtime Errors. <br><br>
+
+                  <h3>Python utiliza muita memória <br></h3>
+                  Para prover toda sua simplicidade para o programador, a linguagem de Programação Python utiliza muita memória e um péssimo gerenciamento de memória, diferente do Java. Isso é uma desvantagem séria quando se vai desenvolver aplicações que requerem uma boa otimização de memória. <br><br><br>
+
+                <h2><center>Aplicações</center></h2>
+                -Gerenciamento de projetos de software <br>
+                -Desenvolvimento de protótipos de software <br>
+                -Desenvolvimento de aplicações de desktop usando bibliotecas de interface gráfica do usuário (GUI) <br>
+                -Desenvolvimento de jogos simples baseados em texto para videogames mais complexos 
+              </p>
+              <h2><center>Conceitos Básicos</center></h2>
+              <p>As principais estruturas são as Listas, Sets, Dicionários e Tuplas.</p>
+              <h3>Listas</h3>
+              <p>Uma lista é a estrutura de dados mais básica do Python e armazena os dados em sequência, onde cada elemento possui sua posição na lista, denominada de índice. O primeiro elemento é sempre o índice zero e a cada elemento inserido na lista esse valor é incrementado.
+              </p>
+              <p>No Python, uma lista pode armazenar qualquer tipo de dado primitivo (string, inteiro, float, etc).</p>
+              <p>Para a criação de uma lista no Python, a sintaxe é a seguinte:</p>
+
+              <p>nome_da_lista = [] # Criação de uma lista vazia</p>
+              <p>nome_da_lista = [1, 2, 3] # Criação de uma lista de inteiros</p>
+              <p>nome_da_lista = [1, "Olá, mundo!", 1.1] # Criação de uma lista com vários tipos diferentes</p>
+              <h3>Tuplas</h3>
+              <p>Uma tupla é uma estrutura bastante similar a uma lista, com apenas uma diferença: os elementos inseridos em uma tupla não podem ser alterados, diferente de uma lista onde podem ser alterados livremente. Sendo assim, em um primeiro momento, podemos pensar em uma tupla como uma lista que não pode ser alterada, mas não é bem assim…
+              </p>
+              <p>É certo que as tuplas possuem diversas características das listas, porém os usos são distintos. As listas são destinadas a serem sequências homogêneas, enquanto que as Tuplas são estruturas de dados heterogêneas.
+              </p>
+              <p>Sendo assim, apesar de bastante similares, a tupla é utilizada para armazenar dados de tipos diferentes, enquanto que a lista é para dados do mesmo tipo.</p>
+              <p>A sintaxe para criação de uma tupla, assim como uma lista, também é bem simples. Ao invés de se utilizar colchetes (listas), são utilizados parênteses, como podemos ver abaixo:              </p>
+              <p>nome_da_tupla = (1, 2, 3) #tupla de inteiros</p>
+              <p>nome_da_tupla = (1, "olá", 1.5) #tupla heterogênea</p>
+              <h3>Sets</h3>
+              <p>No Python, os sets são uma coleção de itens desordenada, parcialmente imutável e que não podem conter elementos duplicados. Por ser parcialmente imutável, os sets possuem permissão de adição e remoção de elementos.              </p>
+              <p>Além disso, os sets são utilizados, normalmente, com operações matemáticas de união, interseção e diferença simétrica, conforme veremos nos próximos tópicos.
+              </p>
+              <p>Para a criação de um set no Python há duas formas: A primeira é bem similar às listas e tuplas, porém utilizando chaves {} para determinar os elementos do set:</p>
+              <p>nome_do_set = {1, 2, 3, 4}</p>
+              <p>A segunda é utilizando o método set presente no Python:</p>
+               <p>nome_do_set = set([1, 2, 3, 4])</p>
+               <h3>Dicionários</h3>
+              <p>No Python, os dicionários são coleções de itens desordenados com uma diferença bem grande quando comparados às outras coleções (lists, sets, tuples, etc): um elemento dentro de um dicionário possui uma chave atrelada a ele, uma espécie de identificador.</p>
+              <p>Sendo assim, é muito utilizado quando queremos armazenar dados de forma organizada e que possuem identificação única (como acontece em bancos de dados).
+                Um dicionário, portanto, pode ser visto como a figura abaixo:</p>
+               <center><img src="dicionarios.jpg" width="450" height="250"></center>
+              <p>Onde cada valor é “atrelado” à uma chave, seu identificador. Vale lembrar que, por necessitar que cada valor possua uma chave relacionada a ele, as chaves dos dicionários devem ser únicas para que possam ser acessadas, também, através do seu índice.
+              </p>
+              <p>As chaves também não são armazenadas em qualquer ordem, elas apenas são associadas aos valores que pertencem.</p>
+              <p>Existem duas formas de se criar um dicionário utilizando o Python. A primeira delas é utilizando chaves ( {} ) e separando os elementos das chaves com dois pontos ( : ) e os outros elementos por vírgula ( , ):</p>
+              <p>nome_do_dicionario = {1: ‘João’, 2: ‘José’}</p>
+              <p>nome_do_dicionario = {‘nome’: ‘João’, ‘sobrenome’: ‘Silva’}</p>
+              <p>A segunda forma é utilizando o método dict() com o dicionário sendo passado como parâmetro: </p>
+              <p>nome_do_dicionario = dict({1: ‘João’, 2: ‘José’}) </p>
+              <p>nome_do_dicionario = dict({‘nome’: ‘João’, ‘sobrenome’: ‘Silva’})</p>
+              <p><h4>Comentários:</h4> Utilizados para explicar o código. Comentários em Python são precedidos por # para comentários de uma linha ou """ """ para comentários de várias linhas.
+              </p>
+              <p># Este é um comentário de uma linha</p>
+              <p>"""</p>
+              <p>Este é um comentário de múltiplas linhas</p>
+              <p>"""</p>
+              <p><h4>Importação de Módulos:</h4>Você pode importar bibliotecas e módulos para adicionar funcionalidades ao seu programa.</p>
+              <p>import math  # Importa o módulo math</p>
+              <p>from datetime import datetime  # Importa a classe datetime do módulo datetime</p>
+              <p>Definição de Funções: Funções são definidas usando a palavra-chave def.</p>
+              <p>def saudacao(nome):</p>
+              <p>return f"Olá, {nome}!"</p>
+              <p>print(saudacao("Maria"))  # Chama a função e imprime "Olá, Maria!"</p>
+              <p><h4>Declaração de Variáveis:</h4>Em Python, você pode criar variáveis simplesmente atribuindo um valor a um nome.</p>
+              <p>idade = 25</p>
+              <p>nome = "João"</p>
+              <p><h4>Estruturas de Controle:</h4>Python oferece estruturas de controle como if, for, while, etc., para controlar o fluxo do programa.
+              </p>
+              <p>if idade >= 18:</p>
+              <p>print("Maior de idade")</p>
+              <p>else:</p>
+              <p>print("Menor de idade")</p>
+              <p><h4>Laços de Repetição:</h4>Você pode usar laços for e while para repetir blocos de código.</p>
+              <p>for i in range(5):</p>
+              <p>print(i)  # Imprime números de 0 a 4</p>
+              <p>while idade < 30:</p>
+              <p>print(f"Idade: {idade}")</p>
+              <p>idade += 1</p>
+              <p><h4>Função Principal (opcional):</h4>Em programas maiores, é comum definir uma função principal e usá-la como ponto de entrada.
+              </p>
+              <p>def main():</p>
+              <p>print("Este é o programa principal.")</p>
+              <p>if _name_ == "_main_":</p>
+              <p>main()</p>
+              <p>Exceções e Tratamento de Erros: Python permite tratar erros de execução usando blocos try, except.</p>
+              <p>try:</p>
+              <p> resultado = 10 / 0</p>
+              <p>except ZeroDivisionError:</p>
+              <p>print("Erro: Divisão por zero.")</p>
+        </div>
+
+        <div class="column side">
+        </div>
+      </div>
+</body>
+</html>
